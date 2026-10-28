@@ -1,0 +1,113 @@
+.landing-container {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.landing-page-content {
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Page title */
+
+.landing-page-title {
+  margin-bottom: 24px;
+}
+
+.landing-page-title h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.landing-page-title p {
+  margin: 6px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Dashboard content */
+
+.landing-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Cards */
+
+.landing-card {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.landing-card h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-description {
+  margin: 0 0 18px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Profile */
+
+.user-details {
+  margin-top: 16px;
+}
+
+.user-details p {
+  display: flex;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.user-details strong {
+  width: 90px;
+  flex-shrink: 0;
+  color: #333;
+}
+
+.user-details span {
+  color: #444;
+}
+
+/* Buttons */
+
+.landing-action-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #0d6efd;
+  color: #fff;
+}
+
+.landing-action-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .landing-page-content {
+    padding: 16px;
+  }
+
+  .landing-content {
+    grid-template-columns: 1fr;
+  }
+}
